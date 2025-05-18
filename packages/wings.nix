@@ -5,16 +5,16 @@
 }:
 buildGoModule rec {
   pname = "wings";
-  version = "1.0.0-beta11";
+  version = "1.0.0-beta13";
 
   src = fetchFromGitHub {
     owner = "pelican-dev";
     repo = "wings";
     rev = "v${version}";
-    hash = "sha256-Y4JMEe7kIv9a/KpUCIRhtGxLQIS3NwZvgbeqGkZF1dE=";
+    hash = "sha256-c28cJwFff/UuD6cp5s9vACj8MtN9ysfNKEtjXOFMY+k=";
   };
 
-  vendorHash = "sha256-Dgw+b8OS01HRsL8IhxgjOjNlx25K/Zj3A27IVpJQ/kw=";
+  vendorHash = "sha256-pxPZZeJpocFzeD0n+KreV+oI2BhL8eZOWFtZDFYOe00=";
   subPackages = [ "." ];
 
   ldflags = [
